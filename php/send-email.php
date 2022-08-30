@@ -7,7 +7,6 @@ function url(){
     $_SERVER['SERVER_NAME']
   );
 }
-if($_GET) {
    $name = trim(stripslashes($_GET['name']));
    $email = trim(stripslashes($_GET['email']));
    $subject = trim(stripslashes($_GET['subject']));
@@ -21,7 +20,7 @@ if($_GET) {
 	$headers = "From: " . $from . "\r\n";
    ini_set("sendmail_from", $to); // for windows server
    $mail = mail($to, $subject, $message, $headers);
+
 	if ($mail) { echo "OK"; }
    else { echo "Something went wrong. Please try again."; }
-}
 ?>

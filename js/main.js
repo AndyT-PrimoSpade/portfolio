@@ -559,7 +559,7 @@ var contactForm = function() {
 					waitText = 'Submitting...';
 
 				$.ajax({   	
-			      type: "GET",
+			      type: "POST",
 			      url: "php/send-email.php",
 			      data: $(form).serialize(),
 
