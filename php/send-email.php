@@ -8,10 +8,10 @@ function url(){
   );
 }
 if($_GET) {
-   $name = trim(stripslashes($_POST['name']));
-   $email = trim(stripslashes($_POST['email']));
-   $subject = trim(stripslashes($_POST['subject']));
-   $contact_message = trim(stripslashes($_POST['message']));
+   $name = trim(stripslashes($_GET['name']));
+   $email = trim(stripslashes($_GET['email']));
+   $subject = trim(stripslashes($_GET['subject']));
+   $contact_message = trim(stripslashes($_GET['message']));
 	if ($subject == '') { $subject = "Contact Form Submission"; }
    // Set Message
    $message .= "Email from: " . $name . "<br />";
