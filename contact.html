@@ -80,14 +80,12 @@
                                 </div>
                                 <div class="form-group row gsap-reveal">
                                     <div class="col-md-12 d-flex align-items-center">
-                                        <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3"
-                                            value="Send Message">
+                                        <button type="submit" class="btn btn-outline-pill btn-custom-light mr-3"
+                                            value="Send Message">Send Message</button>
                                         <span class="submitting"></span>
                                     </div>
                                 </div>
-                                <input type="hidden" name="_next" value="contact.html">
                             </form>
-                            
                         </div>
                         <div class="col-md-4">
                             <div class="contact-info-v1">
@@ -147,20 +145,6 @@
             loop: true
         }) 
     </script>
-    <script>
-        window.watsonAssistantChatOptions = {
-            integrationID: "1c5c6eab-23dc-416d-9eb5-116c1e41e022",
-            region: "us-south",
-            serviceInstanceID: "0971ef98-2a37-4c2e-9189-ca650d39ffea",
-            onLoad: function (instance) { instance.render(); }
-        };
-        setTimeout(function () {
-            const t = document.createElement('script');
-            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-            document.head.appendChild(t);
-        });
-    </script>
-
 </body>
 
 </html>
