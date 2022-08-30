@@ -562,14 +562,6 @@ var contactForm = function () {
 			errorElement: 'span',
 			errorLabelContainer: '.form-error',
 			/* submit via ajax */
-			submitHandler: function (form) {
-				$.ajax({
-					url: "https://formsubmit.co/ajax/andytzjsu@egmail.com",
-					method: "POST",
-					data: $(form).serialize(),
-					dataType: "json"
-				});
-			}
 		});
 	}
 };
