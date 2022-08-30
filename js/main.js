@@ -561,7 +561,6 @@ var contactForm = function () {
 			},
 			errorElement: 'span',
 			errorLabelContainer: '.form-error',
-			/* submit via ajax */
 		});
 	}
 };
